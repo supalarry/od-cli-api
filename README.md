@@ -16,6 +16,19 @@ Response: `{
 "message": "pong"
 }`
 
+### 2. Db version
+Endpoint: `/db/version`
+
+Method: `GET`
+
+Response:
+```
+{
+   "version": 62,
+   "lastMigration": "20220411085539_add_fellow_to_company"
+}
+```
+
 ## Adding an endpoint
 Endpoint consists of a route and a handler.
 Route specifies method and endpoint. Handler

@@ -3,6 +3,7 @@ import cors from 'cors';
 import Logger from './services/logger';
 import config from './config/config';
 import serverHealthCheckRoutes from './routes/serverHealthCheck';
+import dbVersion from './routes/db/version';
 
 // Used to inform about origin of logs
 const NAMESPACE = 'Server';
@@ -14,6 +15,7 @@ const router = express();
  * to routes we use. So API call is, for example, localhost:1000/api/route
  */
 router.use('/api/', serverHealthCheckRoutes);
+router.use('/api/', dbVersion);
 
 /**
  * Set up CORS
