@@ -1,11 +1,11 @@
 {
-    "name": "summon-api",
+    "name": "od-cli-api",
     "version": "1.0.0",
     "main": "source/server.ts",
-    "repository": "https://github.com/supalarry/summon-api",
+    "repository": "https://github.com/supalarry/od-cli-api",
     "author": "Larry <lauris.skraucis@gmail.com>",
     "license": "MIT",
-    "private": true,
+    "private": false,
     "scripts": {
         "dev": "nodemon source/server.ts",
         "build": "rm -rf build && prettier --write source/ && tsc"
