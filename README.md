@@ -55,7 +55,7 @@ Response:
 }
 ```
 
-### 3. Headsup add
+### 4. Headsup add
 
 Endpoint: `/api/headsup`
 
