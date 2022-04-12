@@ -1,8 +1,8 @@
 # od-cli-api
 ## Local development
-This project uses the `yarn` dependency manager.
-1. Run `yarn install` to install dependencies.
-2. Run `yarn dev` to start the development server.
+This project uses the `pnpm` dependency manager.
+1. Run `pnpm install` to install dependencies.
+2. Run `pnpm dev` to start the development server.
 3. Access server on `localhost:1337`
 ## Endpoints
 ### 1. Server health check

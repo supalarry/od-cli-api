@@ -8,7 +8,6 @@ certs/**/*
 *.key
 *.mobileprovision
 *.orig.*
-yarn-error.log
 .env
 
 .DS_Store
