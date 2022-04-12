@@ -9,7 +9,7 @@ const DEVELOPMENT = 'development';
 const env = isProduction() ? PRODUCTION : DEVELOPMENT;
 
 const SERVER_HOSTNAME = env === PRODUCTION ? process.env.RENDER_EXTERNAL_URL : 'localhost';
-const SERVER_PORT = PRODUCTION ? 80 : 1337;
+const SERVER_PORT = PRODUCTION ? process.env.PORT : 3001;
 
 function isProduction() {
     const env = process.env.NODE_ENV;
