@@ -17,7 +17,7 @@ Response: `{
 }`
 
 ### 2. Db version
-Endpoint: `/db/version`
+Endpoint: `/api/db/version`
 
 Method: `GET`
 
@@ -26,6 +26,32 @@ Response:
 {
    "version": 62,
    "lastMigration": "20220411085539_add_fellow_to_company"
+}
+```
+
+### 3. Headsup
+
+Endpoint: `/api/headsup`
+
+Method: `GET`
+
+Response:
+```
+{
+    "messages": [
+        {
+            "type": "warning",
+            "text": "Someone spilled coffee on Sentry servers, so Vercel builds are failing"
+        },
+        {
+            "type": "info",
+            "text": "New joiner - let's welcome Robert Cecil Martin to the team!"
+        },
+        {
+            "type": "success",
+            "text": "Prisma was updated to the latest version 30.0.0!"
+        }
+    ]
 }
 ```
 

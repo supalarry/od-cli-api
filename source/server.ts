@@ -4,6 +4,7 @@ import Logger from './services/logger';
 import config from './config/config';
 import serverHealthCheckRoutes from './routes/serverHealthCheck';
 import dbVersion from './routes/db/version';
+import headsupList from './routes/headsup/list';
 
 // Used to inform about origin of logs
 const NAMESPACE = 'Server';
@@ -16,6 +17,7 @@ const router = express();
  */
 router.use('/api/', serverHealthCheckRoutes);
 router.use('/api/', dbVersion);
+router.use('/api/', headsupList);
 
 /**
  * Set up CORS
