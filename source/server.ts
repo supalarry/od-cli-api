@@ -1,4 +1,3 @@
-import http from 'http';
 import express from 'express';
 import cors from 'cors';
 import Logger from './services/logger';
@@ -75,5 +74,4 @@ router.use((req, res, next) => {
 /**
  * Start the server
  */
-const httpServer = http.createServer(router);
-httpServer.listen(config.server.port, () => Logger.info(NAMESPACE, `Server is running ${config.server.hostname}:${config.server.port}`));
+router.listen(config.server.port, () => Logger.info(NAMESPACE, `Server is running ${config.server.hostname}:${config.server.port}`));
