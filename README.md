@@ -29,7 +29,7 @@ Response:
 }
 ```
 
-### 3. Headsup
+### 3. Headsup list
 
 Endpoint: `/api/headsup`
 
@@ -52,6 +52,26 @@ Response:
             "text": "Prisma was updated to the latest version 30.0.0!"
         }
     ]
+}
+```
+
+### 3. Headsup add
+
+Endpoint: `/api/headsup`
+
+Method: `POST`
+
+Request body:
+```
+{
+   "message": "I will return whatever I received"
+}
+```
+
+Response:
+```
+{
+   "message": "I will return whatever I received"
 }
 ```
 
