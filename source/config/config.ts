@@ -4,8 +4,14 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 // SERVER_HOSTNAME, SERVER_PORT is available when app is hosted
-const SERVER_HOSTNAME = process.env.SERVER_HOSTNAME || 'localhost';
-const SERVER_PORT = process.env.port || 1337;
+
+const SERVER_HOSTNAME = isProduction() ? process.env.RENDER_EXTERNAL_URL : 'localhost';
+const SERVER_PORT = isProduction() ? 80 : 1337;
+
+function isProduction() {
+    const env = process.env.NODE_ENV;
+    return env === 'production';
+}
 
 const SERVER = {
     hostname: SERVER_HOSTNAME,
