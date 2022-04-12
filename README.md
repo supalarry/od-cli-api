@@ -3,10 +3,12 @@
 This project uses the `pnpm` dependency manager.
 1. Run `pnpm install` to install dependencies.
 2. Run `pnpm dev` to start the development server.
-3. Access server on `localhost:1337`
+3. Access dev server on `localhost:3001`
+4. Access prod server on `https://od-cli.onrender.com`
+
 ## Endpoints
 ### 1. Server health check
-URL: `http://localhost:1337/api/ping`
+Endpoint: `/api/ping`
 
 Method: `GET`
 
