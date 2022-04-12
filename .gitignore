@@ -10,3 +10,5 @@ certs/**/*
 *.orig.*
 yarn-error.log
 .env
+
+.DS_Store
