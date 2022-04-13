@@ -13,15 +13,6 @@ const NAMESPACE = 'Server';
 const router = express();
 
 /**
- * Routes. '/api/' will be automatically prepended
- * to routes we use. So API call is, for example, localhost:1000/api/route
- */
-router.use('/api/', serverHealthCheckRoutes);
-router.use('/api/', dbVersion);
-router.use('/api/', headsupList);
-router.use('/api/', headsupAdd);
-
-/**
  * Set up CORS
  */
 const corsOptions: cors.CorsOptions = {
@@ -64,6 +55,15 @@ router.use((req, res, next) => {
 
     next();
 });
+
+/**
+ * Routes. '/api/' will be automatically prepended
+ * to routes we use. So API call is, for example, localhost:1000/api/route
+ */
+router.use('/api/', serverHealthCheckRoutes);
+router.use('/api/', dbVersion);
+router.use('/api/', headsupList);
+router.use('/api/', headsupAdd);
 
 /**
  * Middleware to handle errors. If request made this far,
