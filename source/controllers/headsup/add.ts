@@ -9,7 +9,7 @@ const headsupAdd = async (req: Request, res: Response, next: NextFunction) => {
     Logger.info(NAMESPACE, 'Invoked');
 
     const headsup = await addHeadsup(req.body.type, req.body.text);
-    return res.status(201).json(headsup);
+    return res.status(201).json(...headsup!);
 };
 
 export default { headsupAdd };

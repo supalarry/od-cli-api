@@ -65,14 +65,18 @@ Method: `POST`
 Request body:
 ```
 {
-   "message": "I will return whatever I received"
+    "type": "info",
+    "text": "On Deck raised series C 100 million!!!"
 }
 ```
 
 Response:
 ```
 {
-   "message": "I will return whatever I received"
+    "id": 8,
+    "created_at": "2022-04-13T09:19:10.744756+00:00",
+    "type": "info",
+    "text": "On Deck raised series C 100 million!!!"
 }
 ```
 
