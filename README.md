@@ -7,6 +7,11 @@ This project uses the `pnpm` dependency manager.
 4. Access dev server on `localhost:3001`
 5. Access prod server on `https://od-cli.onrender.com`
 
+## Tech stack
+1. Node.js + Express + TypeScript
+2. Server hosted on Render
+3. Database hosted in Supabase
+
 ## Endpoints
 ### 1. Server health check
 Endpoint: `/api/ping`
