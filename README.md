@@ -2,9 +2,10 @@
 ## Local development
 This project uses the `pnpm` dependency manager.
 1. Run `pnpm install` to install dependencies.
-2. Run `pnpm dev` to start the development server.
-3. Access dev server on `localhost:3001`
-4. Access prod server on `https://od-cli.onrender.com`
+2. Add keys in `.env.local` and rename it to `.env`.
+3. Run `pnpm dev` to start the development server.
+4. Access dev server on `localhost:3001`
+5. Access prod server on `https://od-cli.onrender.com`
 
 ## Endpoints
 ### 1. Server health check
